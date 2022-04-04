@@ -6,10 +6,14 @@ import net.sevecek.util.*;
 public class HlavniProgram {
 
     public void main(String[] args) {
+        new Stone(200, 150);
 
-        new Fish(50, 50);
-        // TODO: Sem vepiste svuj program
-
+        Fish rybka;
+        rybka = new Fish(50, 50);
+        for (int i=0; i<4; i++) {
+            rybka.moveForward(250);
+            rybka.turnRight();
+        }
     }
 
 }
